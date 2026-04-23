@@ -51,9 +51,19 @@ Para cumprir o requisito de gestão dos testes, estou utilizando o GitHub Projec
 - **In test:** Funcionalidades em processo de teste manual ou via API.
 - **Test done:** Testes finalizados e bugs devidamente documentados.
 
-## Atividades Concluídas (Semanas 1 e 2)
+## Evolução do Projeto
 
-- Configuração e subida do ambiente utilizando Docker e Docker Compose.
-- Estruturação do repositório de QA e documentação inicial.
-- Criação e configuração do quadro Kanban para gestão dos requisitos.
-- Início do mapeamento dos testes exploratórios no sistema local.
+O ciclo de QA foi dividido em etapas estratégicas para garantir a cobertura total da aplicação.
+
+### Etapa 1: Infraestrutura e Governança (Semanas 1 e 2)
+
+O foco inicial foi o estabelecimento de uma base técnica sólida. Isso incluiu a containerização de todo o ecossistema (Back-end, Front-end e Banco de Dados) via Docker para garantir a paridade entre ambientes de desenvolvimento e teste. Paralelamente, foi estruturada a governança do projeto através do GitHub Projects, permitindo a rastreabilidade dos requisitos desde o dia zero e a organização de um fluxo de trabalho ágil.
+
+### Etapa 2: Planejamento e Design de Testes (Semana 3)
+
+Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos cenários. Nesta fase, as regras de negócio foram transformadas em **9 Casos de Teste (CTs)** técnicos, utilizando o GitHub Issues como repositório de documentação.
+
+- **Foco em Regras Críticas:** O planejamento foi adaptado para cobrir requisitos dinâmicos surgidos durante o ciclo, como a restrição de frequência de check-ins (janela de 24h) e o bloqueio de mídias duplicadas para prevenção de fraudes.
+- **Preparação Técnica:** Integração com o documento do Postman - que está situado na pasta "docs" dentro do Back-End - para mapeamento de payloads e definição de Status Codes esperados, preparando o terreno para a execução automatizada.
+
+**O Quadro de Testes** está presente na aba "Projects" dentro deste mesmo repositório.
