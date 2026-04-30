@@ -37,11 +37,13 @@ Para garantir a qualidade do sistema NaSalinha, a estratégia de testes foi estr
 
 - **Caixa Preta:** Testes baseados em cenários de uso e análise de valores limite, focando nas entradas e saídas do sistema sem necessidade de validar o código-fonte diretamente.
 
-### 3. Tipos de Teste (O que testar?)
+### 3. Tipos de Testes Obrigatórios Executados
 
-- **Teste de Funcionalidade:** Foco em validar se o comportamento do sistema (ex: cadastro, login) corresponde às regras de negócio definidas.
-- **Teste de Interface:** Validação visual e de navegação para garantir que a experiência do usuário (UX) esteja correta.
-- **Validação de API:** Testes de integração focados em endpoints, payloads e Status Codes (200, 201, 400, etc.).
+Para garantir a cobertura exigida no desafio, os 18 Casos de Teste foram distribuídos entre as 3 áreas core utilizando as seguintes abordagens:
+
+- **Foco Funcional:** Validação das regras de negócio e comportamento esperado pelo usuário (ex: cálculo de pontos, validação de inputs e obrigatoriedade de campos).
+- **Validação de API:** Testes focados no servidor utilizando Postman para validar Status Codes (`200`, `201`, `400`, `403`), formatos de resposta e segurança de endpoints (RBAC).
+- **Teste de Regressão:** Cenários desenhados para simular o fluxo principal do sistema e garantir que futuras correções de bugs não gerem efeitos colaterais em funcionalidades já estabilizadas (ex: garantir integridade do ranking após deleção de check-ins).
 
 ## Organização dos testes (Kanban)
 
@@ -61,9 +63,9 @@ O foco inicial foi o estabelecimento de uma base técnica sólida. Isso incluiu 
 
 ### Etapa 2: Planejamento e Design de Testes (Semana 3)
 
-Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos cenários. Nesta fase, as regras de negócio foram transformadas em **9 Casos de Teste (CTs)** técnicos, utilizando o GitHub Issues como repositório de documentação.
+Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos cenários. Nesta fase, as regras de negócio foram transformadas em 18 Casos de Teste (CTs) técnicos, utilizando o GitHub Issues como repositório de documentação integrado ao GitHub Projects.
 
-- **Foco em Regras Críticas:** O planejamento foi adaptado para cobrir requisitos dinâmicos surgidos durante o ciclo, como a restrição de frequência de check-ins (janela de 24h) e o bloqueio de mídias duplicadas para prevenção de fraudes.
-- **Preparação Técnica:** Integração com o documento do Postman - que está situado na pasta "docs" dentro do Back-End - para mapeamento de payloads e definição de Status Codes esperados, preparando o terreno para a execução automatizada.
+- **Foco em Regras Críticas e Segurança:** O planejamento foi expandido além do "caminho feliz", cobrindo testes de escalação de privilégio (RBAC), restrição de frequência de check-ins (janela de 24h), isolamento de temporadas e bloqueio de mídias inválidas.
+- **Preparação Técnica:** Integração com a coleção do Postman (disponível na pasta `/docs` do Back-End) para mapeamento exato das rotas, payloads e definição de Status Codes esperados antes da execução.
 
 **O Quadro de Testes** está presente na aba "Projects" dentro deste mesmo repositório.
