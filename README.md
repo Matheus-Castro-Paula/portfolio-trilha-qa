@@ -51,7 +51,11 @@ Para cumprir o requisito de gestão dos testes, estou utilizando o GitHub Projec
 
 - **Ready for Test:** Funcionalidades planejadas e prontas para validação.
 - **In test:** Funcionalidades em processo de teste manual ou via API.
-- **Test done:** Testes finalizados e bugs devidamente documentados.
+- **Bugs Back-End:** Registro dos Bugs descobertos através do Back-End.
+- **Bugs Front-End:** Registro dos Bugs descobertos através do Front-End.
+- **Test done Back-End:** Testes do Back-End finalizados e resultados devidamente documentados.
+- **Test done Front-End:** Testes do Front-End finalizados e resultados devidamente documentados.
+- **Blocked:** Testes que não puderam ser concluídos devido a impedimentos técnicos ou bugs impeditivos.
 
 ## Evolução do Projeto
 
@@ -63,9 +67,9 @@ O foco inicial foi o estabelecimento de uma base técnica sólida. Isso incluiu 
 
 ### Etapa 2: Planejamento e Design de Testes (Semana 3)
 
-Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos cenários. Nesta fase, as regras de negócio foram transformadas em 18 Casos de Teste (CTs) técnicos, utilizando o GitHub Issues como repositório de documentação integrado ao GitHub Projects.
+Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos cenários. Nesta fase, as regras de negócio foram transformadas em **36 Casos de Teste (CTs) técnicos** — sendo 18 focados na validação da interface (Front-end) e 18 focados na validação da API (Back-end) —, utilizando o GitHub Issues como repositório de documentação integrado ao GitHub Projects.
 
-- **Foco em Regras Críticas e Segurança:** O planejamento foi expandido além do "caminho feliz", cobrindo testes de escalação de privilégio (RBAC), restrição de frequência de check-ins (janela de 24h), isolamento de temporadas e bloqueio de mídias inválidas.
-- **Preparação Técnica:** Integração com a coleção do Postman (disponível na pasta `/docs` do Back-End) para mapeamento exato das rotas, payloads e definição de Status Codes esperados antes da execução.
+- **Foco em Regras Críticas e Segurança:** O planejamento cobriu testes de escalação de privilégio (RBAC), restrição de frequência de check-ins, isolamento de temporadas e bloqueio de mídias inválidas em ambas as camadas.
+- **Preparação Técnica Integrada:** Para o Back-end, utilizou-se a coleção do Postman (pasta `/docs`) para mapeamento de rotas e Status Codes. Para o Front-end, o design focou em validação visual e responsividade.
 
 **O Quadro de Testes** está presente na aba "Projects" dentro deste mesmo repositório.
