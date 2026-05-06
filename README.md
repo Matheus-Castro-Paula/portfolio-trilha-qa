@@ -72,4 +72,12 @@ Com o ambiente estabilizado, a estratégia evoluiu para o design detalhado dos c
 - **Foco em Regras Críticas e Segurança:** O planejamento cobriu testes de escalação de privilégio (RBAC), restrição de frequência de check-ins, isolamento de temporadas e bloqueio de mídias inválidas em ambas as camadas.
 - **Preparação Técnica Integrada:** Para o Back-end, utilizou-se a coleção do Postman (pasta `/docs`) para mapeamento de rotas e Status Codes. Para o Front-end, o design focou em validação visual e responsividade.
 
+### Etapa 3: Execução de Testes de Interface (Semana 4)
+
+O foco desta etapa foi auditar a aplicação através da interface (Front-end), garantindo que as regras de negócio fossem respeitadas visualmente.
+
+- **Execução dos Casos de Teste:** Foram executados os 18 cenários de Front-end, com foco em usabilidade e responsividade mobile.
+- **Bugs Críticos Identificados:** Descoberta de falhas como o vazamento de dados no histórico (CT-12) e a ausência de bloqueios para envios duplicados (CT-10).
+- **Gestão Visual:** Foi utilizado o sistema de labels (`test-case`, `bug`, `pass`, `fail`) para indicar o resultado de cada teste diretamente no board e as labels (`severity: critical`, `severity: major` e `severity: minor`) para definir a severidade de cada bug.
+
 **O Quadro de Testes** está presente na aba "Projects" dentro deste mesmo repositório.
