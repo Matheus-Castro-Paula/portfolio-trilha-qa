@@ -80,4 +80,12 @@ O foco desta etapa foi auditar a aplicação através da interface (Front-end), 
 - **Bugs Críticos Identificados:** Descoberta de falhas como o vazamento de dados no histórico (CT-12) e a ausência de bloqueios para envios duplicados (CT-10).
 - **Gestão Visual:** Foi utilizado o sistema de labels (`test-case`, `bug`, `pass`, `fail`) para indicar o resultado de cada teste diretamente no board e as labels (`severity: critical`, `severity: major` e `severity: minor`) para definir a severidade de cada bug.
 
+### Etapa 4: Testes de API e Integração (Semana 5)
+
+Validação profunda do Back-end utilizando Postman para garantir a integridade dos endpoints e regras de servidor.
+
+- **Consolidação de Falhas (404):** Múltiplas rotas inexistentes foram unificadas na Issue #25 para facilitar a correção.
+- **Testes Bloqueados:** Cenários como o CT-Back-02 (Issue #3) e CT-Back-03 (Issue #4) foram movidos para a coluna **Blocked** devido a falhas críticas nas rotas que impediram a validação completa da funcionalidade.
+- **Gestão Visual:** A gestão visual foi a mesma da semana anterior, utilizando o sistema de labels (`test-case`, `bug`, `pass`, `fail`) para indicar o resultado de cada teste diretamente no board e as labels (`severity: critical`, `severity: major` e `severity: minor`) para definir a severidade de cada bug.
+
 **O Quadro de Testes** está presente na aba "Projects" dentro deste mesmo repositório.
